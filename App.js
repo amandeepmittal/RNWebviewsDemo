@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
-import WebView from 'react-native-webview'
+import React from 'react'
+import AppContainer from './navigation/AppNavigator'
 
-export default class App extends Component {
-	render() {
-		return <WebView source={{ uri: 'https://blog.jscrambler.com' }} style={{ marginTop: 20 }} />
-	}
+export default function App() {
+	return <AppContainer />
 }
